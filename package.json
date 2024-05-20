@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.6.2",
+    "mongoose": "^8.4.0"
+  },
+  "name": "fantastic-eshop",
+  "description": "This is an E-commerce Website, Where we can buy multiple products. It has an admin view which manages the front view without code intervention.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pratik667/fantastic-eshop.git"
+  },
+  "author": "Pratik Mandlik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pratik667/fantastic-eshop/issues"
+  },
+  "homepage": "https://github.com/Pratik667/fantastic-eshop#readme"
+}
