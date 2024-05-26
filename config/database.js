@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const uri = "mongodb+srv://pmandlik:Charmsheritage%406696%23@eshop-cluster0.dr2ihti.mongodb.net/eshop-db?retryWrites=true&w=majority";
+const uri = "mongodb+srv://pmandlik:Charmsheritage%406696%23@eshop-cluster0.dr2ihti.mongodb.net/fantasticeshop?retryWrites=true&w=majority&appName=eshop-cluster0";
 
 async function connectDB() {
   try {

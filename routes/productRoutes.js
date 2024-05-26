@@ -2,6 +2,20 @@ const express = require('express');
 const router = express.Router();
 const productService = require('../services/productService');
 
+// Fetch all documents from the collection
+router.get('/all', async (req, res) => {
+  try {
+    const product = await productService.getAllProducts();
+    if (product) {
+      res.status(200).json(product);
+    } else {
+      res.status(404).send('Product not found');
+    }
+  } catch (error) {
+    res.status(500).send('Error fetching all product: ' + error.message);
+  }
+});
+
 // GET route to fetch a product by ID
 router.get('/:id', async (req, res) => {
   try {

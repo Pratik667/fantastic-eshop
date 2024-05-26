@@ -6,9 +6,10 @@ const productSchema = new mongoose.Schema({
   brand: { type: String, required: true },
   price: { type: Number, required: true },
   quantity: { type: Number, required: true },
-  description: { type: String },
-  category: { type: String, required: true }
+  description: { type: String, required: true },
+  category: { type: String, required: true },
+  images: { type: String, required: true }
 });
 
-const Product = mongoose.model('Product', productSchema, 'allProducts');
+const Product = mongoose.model('allproducts', productSchema); //collection name, state schema
 module.exports = Product;

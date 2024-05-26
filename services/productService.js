@@ -9,6 +9,15 @@ async function getProductById(productId) {
   }
 }
 
+async function getAllProducts(){
+  try{
+    const product = await Product.find();
+    return product ? product : null;
+  }catch (error) {
+    throw new Error('Error finding product: ' + error.message);
+  }
+}
+
 async function createProduct(productData) {
   try {
     const product = new Product(productData);
@@ -21,5 +30,6 @@ async function createProduct(productData) {
 
 module.exports = {
   getProductById,
+  getAllProducts,
   createProduct
 };
