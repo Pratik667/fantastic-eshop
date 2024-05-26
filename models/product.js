@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
   quantity: { type: Number, required: true },
   description: { type: String, required: true },
   category: { type: String, required: true },
-  images: { type: String, required: true }
+  images: { type: Array, required: true }
 });
 
 const Product = mongoose.model('allproducts', productSchema); //collection name, state schema
